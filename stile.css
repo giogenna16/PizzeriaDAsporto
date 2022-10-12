@@ -1,0 +1,109 @@
+@media screen {
+     
+    body{font-family: Verdana, Geneva, Arial, Sans-Serif; font-size: 100%}
+    .theHeader{grid-area: header; background-color: palegoldenrod; color:darkgreen ; font-family: Georgia, Serif; font-style: italic; padding: 3ex;  border:  0.5ex double black;} 
+    .menu1{grid-area: menu-1; } 
+    .menu2{grid-area: menu-2; } 
+    .menu3{grid-area: menu-3; } 
+    .menu4{grid-area: menu-4; } 
+    .menu5{grid-area: menu-5; } 
+    .menu6{grid-area: menu-6; }
+    .menu7{grid-area: menu-7; }  
+    [class*="menu"]{text-align: center; background-color:darkred; color: whitesmoke; padding:1.5ex;  border:  0.5ex double black;}
+    .theMain{grid-area: main; background-color: darkgreen; color: whitesmoke; padding: 4ex;  border:  0.5ex double black;}
+    .theFooter{grid-area: footer;  text-align: center;  background-color: darkred; color: whitesmoke; padding: 1.5ex;  border:  0.5ex double black;  font-family: Georgia, Serif; font-style: italic; font-size: 75%;}
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'header header header header header header header'
+        'menu-1 menu-2 menu-3 menu-4 menu-5 menu-6 menu-7'
+        'main main main main main main main'
+        'footer footer footer footer footer footer footer';
+        grid-gap: 0.3ex;
+	    padding: 0.3ex;
+        border:  0.5ex double black;
+        background-color: peru;
+    }
+    a{text-decoration: unset; color:whitesmoke; padding-top: 3ex;}
+    h1,h2{text-align: center; }
+    h2{padding-bottom: 3.5ex; color: palegoldenrod;}
+    input{background-color: palegoldenrod; color: black; padding: 1ex; width: 40%; }
+    input.registra{background-color: peru; color: whitesmoke; font-weight: bolder; padding: 2.5ex;  display: block;  margin-left: auto; margin-right: auto; font-size: 135%; width: 30%;}
+    input.registra:hover {opacity: 0.8;}
+    p.consiglio{margin-top: -2ex; font-size: 75%;}
+    p.sopraInput{margin-bottom: -1.25ex; margin-top: 2.5ex;}
+    input.reset{background-color: peru; color: whitesmoke; font-weight: bold; padding: 0.5ex;  font-size: 100%; width: 30%; }
+    input.reset:hover {opacity: 0.8;}
+    p.error{font-weight: bolder; color: coral; padding-top: 5ex; padding-bottom: 5ex;}
+    p.success{font-weight: bolder}
+    table,th,td{ padding-bottom: 2.5ex; padding-right: 2.5ex; padding-left: 2.5ex; padding-top: 2.5ex; text-align: center; }
+    th{color:palegoldenrod;}
+    table.tabella{  margin-left: auto; margin-right: auto; }
+    p.avviso{font-weight: bolder; color: coral; padding-top: 10ex; padding-bottom: 10ex;}
+    select{background-color:palegoldenrod;}
+    p.riuscito{font-weight: bolder; padding-top: 10ex; padding-bottom: 10ex;}
+    input.cambiaT{background-color: palegoldenrod ;color: black; padding: 1ex; width: 100%; }
+    input.cambia{background-color: palegoldenrod ;color: black; padding: 1ex; width: 100%; }
+    input.cambia:hover {opacity: 0.8;}
+    p.infoU{color:darkred; text-align: right; font-family: Verdana, Geneva, Arial, Sans-Serif; font-size: 70%; font-weight: bold; }
+    input.logout{background-color:darkred; color: whitesmoke; border: none;}
+    
+
+}
+@media only screen and (max-width: 768px){
+    body{font-family: Verdana, Geneva, Arial, Sans-Serif; font-size: 100%}
+    .theHeader{grid-area: header; text-align: center; background-color: palegoldenrod; color:darkgreen ; font-family: Georgia, Serif; font-style: italic; padding: 3ex;  border:  0.5ex double black; min-width:  33ex;} 
+    .menu1{grid-area: menu-1; } 
+    .menu2{grid-area: menu-2; } 
+    .menu3{grid-area: menu-3; } 
+    .menu4{grid-area: menu-4; } 
+    .menu5{grid-area: menu-5; } 
+    .menu6{grid-area: menu-6; } 
+    .menu7{grid-area: menu-7; } 
+    [class*="menu"]{text-align: center; background-color:darkred; color: whitesmoke; padding:1.5ex;  border:  0.5ex double black; min-width:  33ex;}
+    .theMain{grid-area: main; background-color: darkgreen; color: whitesmoke; padding: 4ex;  border:  0.5ex double black; min-width:  33ex;}
+    .theFooter{grid-area: footer;  text-align: center;  background-color: darkred; color: whitesmoke; padding: 1.5ex;  border:  0.5ex double black;  font-family: Georgia, Serif; font-style: italic; font-size: 75%; min-width:  33ex;}
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'header header header header header header'
+        'menu-1 menu-1 menu-1 menu-1 menu-1 menu-1'
+        'menu-2 menu-2 menu-2 menu-2 menu-2 menu-2'
+        'menu-3 menu-3 menu-3 menu-3 menu-3 menu-3'
+        'menu-4 menu-4 menu-4 menu-4 menu-4 menu-4'
+        'menu-5 menu-5 menu-5 menu-5 menu-5 menu-5'
+        'menu-6 menu-6 menu-6 menu-6 menu-6 menu-6'
+        'menu-7 menu-7 menu-7 menu-7 menu-7 menu-7'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+        grid-gap: 0.3ex;
+	    padding: 0.3ex;
+        border:  0.5ex double black;
+        background-color: peru;
+    }
+    a{text-decoration: unset; color:whitesmoke; padding-top: 3ex;}
+    h1,h2{text-align: center;}
+    h2{padding-bottom: 3.5ex; color: palegoldenrod;}
+    input{background-color: palegoldenrod; color: black; padding: 1ex; width: 100%;  }
+    input.registra{background-color: peru; color: whitesmoke; font-weight: bold; display: block;  margin-left: auto; margin-right: auto; min-width: 10ex; width: 30%; }
+    input.registra:hover {opacity: 0.8;}
+    p.consiglio{margin-top: -2ex; font-size: 75%;}
+    p.sopraInput{margin-bottom: -1.25ex; margin-top: 2.5ex;}
+    input.reset{background-color: peru; color: whitesmoke; font-weight: bold; padding: 0.5ex;  font-size: 100%; width: 30%;}
+    input.reset:hover {opacity: 0.8;}
+    p.error{font-weight: bolder; color: coral ; padding-top: 5ex; padding-bottom: 5ex;}
+    p.success{font-weight: bolder}
+    table,th,td{ padding-bottom: 1ex; padding-right: 1ex; padding-left: 1ex; padding-top: 1ex; text-align: center; }
+    table.tabella{  margin-left: auto; margin-right: auto; }
+    p.avviso{font-weight: bolder; color: coral; padding-top: 10ex; padding-bottom: 10ex;}
+    select{background-color:palegoldenrod;}
+    p.riuscito{font-weight: bolder; padding-top: 10ex; padding-bottom: 10ex;}
+    input.cambiaT{background-color: palegoldenrod ;color: black; padding: 1ex; width: 100%; }
+    input.cambia{background-color: palegoldenrod; color: black; padding: 1ex; width: 100%; }
+    input.cambia:hover {opacity: 0.8;}
+    p.infoU{color:darkred; text-align: right; font-family: Verdana, Geneva, Arial, Sans-Serif; font-size: 70%; font-weight: bold; }
+    input.logout{background-color:darkred; color: whitesmoke; border: none; font-size: 150%;}
+    
+}
